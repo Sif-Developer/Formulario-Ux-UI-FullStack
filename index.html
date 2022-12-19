@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario UX/UI + Fullstack</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="formulario-registro">
+      <h1 class="form-title">Crea tu cuenta CareSwitch</h1>
+
+      <label for="nombre"></label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Nombre"
+        pattern="[A-Za-z][a-z]{2,}"
+        required
+        title="Por favor, introduce un nombre válido (al menos 3 letras y una mayúscula)" />
+
+      <br />
+      <br />
+      <label for="apellidos"></label>
+      <input
+        type="text"
+        id="apellidos"
+        name="apellidos"
+        placeholder="Apellidos"
+        pattern="[A-Za-z][a-z]{2,}"
+        required
+        title="Por favor, introduce tus apellidos (al menos 3 letras y una mayúscula)" />
+      <br />
+      <hr>
+      <label for="paises">PAÍS </label> <br />
+      <select name="paises" id="paises" required>
+        <option value="">Selecciona un país o región</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Chile">Chile</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="México">México</option>
+        <option value="Perú">Perú</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+      </select>
+      <br />
+      <hr />
+      <label for="email"></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+        title="Por favor, introduce una dirección de email válida" />
+      <br />
+      <br />
+      <label for="password"></label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Contraseña"
+        required
+        title="Por favor, introduce una contraseña" />
+      <br />
+      <br />
+      <label for="confirm-password"></label>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+        placeholder="Confirma la contraseña"
+        required
+        title="Por favor, confirma tu contraseña" />
+      <br />
+      <br />
+      <label for="paises-telefono"></label>
+      <select name="paises-telefono" id="paises-telefono" required>
+        <option value="">Selecciona un código de país</option>
+        <option value="+54 (Argentina)">(+54) Argentina</option>
+        <option value="+55 (Brasil)">(+55) Brasil</option>
+        <option value="+56 (Chile)">(+56) Chile</option>
+        <option value="+57 (Colombia)">(+57) Colombia</option>
+        <option value="+593 (Ecuador)">(+593) Ecuador</option>
+        <option value="+52 (México)">(+52) México</option>
+        <option value="+51 (Perú)">(+51) Perú</option>
+        <option value="+598 (Uruguay)">(+598) Uruguay</option>
+        <option value="+58 (Venezuela)">(+58) Venezuela</option>
+        <option value="+1 (Estados Unidos)">(+1) Estados Unidos</option>
+      </select>
+      <br />
+      <br />
+      <label for="phone"></label>
+      <input
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Número de teléfono"
+        pattern="[0-9]{9,}"
+        required
+        title="Por favor, introduce un número de teléfono válido (sólo números, sin espacios ni guiones)" />
+      <br />
+      <br />
+      <input class="input-radio" type="radio" required />
+      <label for="">
+        Acepto la política de privacidad y publicidad
+        <a href="https://www.infojobs.net/"> +info</a>
+      </label>
+
+      <br />
+      <br />
+      <button type="submit" id="button-submit" name="button-submit">
+        Registarse
+      </button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>

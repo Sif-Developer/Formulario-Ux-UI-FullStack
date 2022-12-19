@@ -1,0 +1,81 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway:wght@600&display=swap");
+
+
+
+*{
+  margin: 0;
+}
+.form-title {
+  width: 320px;
+  height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #5d5fef;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#formulario-registro {
+  background-color: rgb(243, 238, 232);
+  width: 100%;
+  display: flex;
+  margin-top: 0rem;
+  flex-direction: column;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+
+}
+
+form input {
+    border-radius: 10px;
+    height: 4rem;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+}
+
+.input-radio{
+  height: 1rem;
+}
+
+input[name="nombre"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+input[name="nombre"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+
+input[name="apellidos"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+input[name="apellidos"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+
