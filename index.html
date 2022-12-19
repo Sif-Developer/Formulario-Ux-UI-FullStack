@@ -33,10 +33,10 @@
         required
         title="Por favor, introduce tus apellidos (al menos 3 letras y una mayúscula)" />
       <br />
-      <hr>
-      <label for="paises">PAÍS </label> <br />
+      <hr />
+      <label for="paises" class="pais-title">PAÍS </label> <br />
       <select name="paises" id="paises" required>
-        <option value="">Selecciona un país o región</option>
+        <option value="Australia">Australia</option>
         <option value="Argentina">Argentina</option>
         <option value="Brasil">Brasil</option>
         <option value="Chile">Chile</option>
@@ -82,17 +82,17 @@
       <br />
       <label for="paises-telefono"></label>
       <select name="paises-telefono" id="paises-telefono" required>
-        <option value="">Selecciona un código de país</option>
-        <option value="+54 (Argentina)">(+54) Argentina</option>
-        <option value="+55 (Brasil)">(+55) Brasil</option>
-        <option value="+56 (Chile)">(+56) Chile</option>
-        <option value="+57 (Colombia)">(+57) Colombia</option>
-        <option value="+593 (Ecuador)">(+593) Ecuador</option>
-        <option value="+52 (México)">(+52) México</option>
-        <option value="+51 (Perú)">(+51) Perú</option>
-        <option value="+598 (Uruguay)">(+598) Uruguay</option>
-        <option value="+58 (Venezuela)">(+58) Venezuela</option>
-        <option value="+1 (Estados Unidos)">(+1) Estados Unidos</option>
+        <option value="+34 (España)">+34 (España)</option>
+        <option value="+54 (Argentina)">+54 (Argentina)</option>
+        <option value="+55 (Brasil)">+55 (Brasil)</option>
+        <option value="+56 (Chile)">+56 (Chile)</option>
+        <option value="+57 (Colombia)">+57 (Colombia)</option>
+        <option value="+593 (Ecuador)">+593 (Ecuador)</option>
+        <option value="+52 (México)">+52 (México)</option>
+        <option value="+51 (Perú)">+51 (Perú)</option>
+        <option value="+598 (Uruguay)">+598 (Uruguay)</option>
+        <option value="+58 (Venezuela)">+58 (Venezuela)</option>
+        <option value="+1 (Estados Unidos)">+1 (Estados Unidos)</option>
       </select>
       <br />
       <br />
@@ -106,15 +106,12 @@
         required
         title="Por favor, introduce un número de teléfono válido (sólo números, sin espacios ni guiones)" />
       <br />
-      <br />
+      
       <input class="input-radio" type="radio" required />
-      <label for="">
+      <label class="politics-text" >
         Acepto la política de privacidad y publicidad
-        <a href="https://www.infojobs.net/"> +info</a>
+        <a class="link-info" href="https://www.infojobs.net/">  + info</a>
       </label>
-
-      <br />
-      <br />
       <button type="submit" id="button-submit" name="button-submit">
         Registarse
       </button>

@@ -22,7 +22,10 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-bottom: 20px;
+  margin-top: 32px;
 }
+
 
 #formulario-registro {
   background-color: rgb(243, 238, 232);
@@ -37,45 +40,151 @@
 }
 
 form input {
-    border-radius: 10px;
-    height: 4rem;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: -0.01em;
-    margin-left: 50px;
-    margin-right: 50px;
-  
+  border-radius: 10px;
+  border: 1px solid #BDBDBD;
+  height: 4rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  background: #F2F2F2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  width: 343px;
+  height: 56px;
+  margin: 0 auto;
+  padding-left: 10px;
 }
+
+
+
+
+hr {
+  width: 343px;
+  height: 0px;
+  margin: 0 auto;
+  border: 1px solid #BDBDBD;
+  margin-bottom: 25px;
+  margin-top: 16px;
+}
+
+
+
 
 .input-radio{
   height: 1rem;
 }
 
-input[name="nombre"]::-webkit-input-placeholder {
-  position: relative;
-  font-size: 1.3rem;
-  padding: 0.5rem;
-  transition: 0.3s ease-in-out;
-}
-input[name="nombre"]:focus::-webkit-input-placeholder {
+
+
+input:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
+  font-size: 8px;
   padding: 0;
+  transition: all 0.5s ease-in-out;
+  color: rgba(0, 0, 0, 0.5); 
+  pointer-events: none; 
 }
 
-input[name="apellidos"]::-webkit-input-placeholder {
-  position: relative;
-  font-size: 1.3rem;
-  padding: 0.5rem;
-  transition: 0.3s ease-in-out;
+#paises{
+  border-radius: 10px;
+  border: 1px solid #BDBDBD;
+  height: 4rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  background: #F2F2F2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  width: 360px;
+  height: 62px;
+  margin: 0 auto;
+  padding-left: 10px;
 }
 
-input[name="apellidos"]:focus::-webkit-input-placeholder {
-  position: absolute;
-  font-size: small;
-  padding: 0;
+
+#paises-telefono{
+  border-radius: 10px;
+  border: 1px solid #BDBDBD;
+  height: 4rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  background: #F2F2F2;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  width: 360px;
+  height: 62px;
+  margin: 0 auto;
+  padding-left: 10px;
 }
 
+
+form input:focus {
+  background: rgba(204, 205, 249, 0.25);
+  border-color: #5d5fef;
+}
+
+
+
+.pais-title{
+  margin-left: 10px;
+  color: #828282;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+}
+
+.politics-text{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  padding-left: 6em;
+}
+.input-radio {
+  margin-left: 70px;
+}
+
+
+.link-info{
+  color:  #5D5FEF;
+  text-decoration: none;
+}
+
+#button-submit{
+  border-color: transparent;
+  background: rgba(165, 166, 246, 0.5);
+  border-radius: 8px;
+  margin-left: 15px;
+  color: white;
+  width: 343px;
+  height: 56px;
+  font-size: medium;
+  font-family: "Raleway";
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer{
+  margin-top: 20px;
+  background-color: red;
+}
